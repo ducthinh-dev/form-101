@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font 101</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create an account</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" placeholder="your username" id="username">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">E-mail</label>
+                <input type="text" placeholder="your.email@mail.co" id="mail">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" placeholder="your password" id="password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="re-password">Re-enter password</label>
+                <input type="password" placeholder="re-enter your password" id="re-password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="agree">
+                <input type="checkbox" id="agree">
+                <label for="agree">I have read and agree with <a href="#">Terms & Conditions</a></label>
+                <small>Error message</small>
+            </div>
+            <button>Submit</button>
+        </form>
+        <button id="reset">Reset</button>
+    </div>
+
+
+    <!--SCRIPT-->
+    <script src="./script.js"></script>
+</body>
+
+</html>

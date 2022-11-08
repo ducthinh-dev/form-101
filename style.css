@@ -1,0 +1,158 @@
+:root {
+    --white: #F7FBFC;
+    --blue-grey: #D6E6F2;
+    --blue-sky: #B9D7EA;
+    --blue-dark: #769FCD;
+
+    --red-error: #FF1700;
+    --green-success: #06FF00;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: calibri;
+}
+
+body {
+    margin: 0;
+    background-color: var(--blue-dark);
+    color: var(--blue-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--white);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+
+.header {
+    border-bottom: 1px solid var(--blue-grey);
+    padding: 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid var(--blue-grey);
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: var(--blue-dark);
+}
+
+.form-control.success input {
+    border-color: var(--green-success);
+}
+
+.form-control.error input {
+    border-color: var(--red-error);
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+    color: var(--green-success);
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: var(--red-error);
+    visibility: visible;
+}
+
+.form-control small, .agree small {
+    color: var(--red-error);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small, .agree.error small {
+    visibility: visible;
+}
+
+.form button {
+    background-color: var(--blue-dark);
+    border: 2px solid var(--blue-dark);
+    border-radius: 4px;
+    color: var(--white);
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form button:hover {
+    background-color: var(--blue-sky);
+    border-color: var(--blue-sky);
+}
+
+#reset {
+    color: var(--blue-dark);
+    background-color: var(--white);
+    border: none;
+    display: block;
+    padding: 5px 0;
+    width: 100%;
+}
+
+#reset:hover {
+    background-color: var(--blue-dark);
+    color: var(--white);
+}
+
+.agree {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agree a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.agree a:hover {
+    color: var(--blue-sky);
+}
+
+.agree.error input {
+    border: 2px solid var(--green-success);
+}
